@@ -1,361 +1,372 @@
 <!doctype html>
 <html lang="en"> 
- <head> 
-  <meta charset="UTF-8"> 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <title>Ahamed Alex - Author Portfolio</title> 
-  <link rel="stylesheet" href="styles.css"> 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> 
-  <style type="text/css" id="dcoder_stylesheet">/* General Styling */
-body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background: #f4f5fa;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Ensure that content pushes footer down */
-}
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Ahamed Alex - Author Portfolio</title> 
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> 
+    <style type="text/css">
+        /* General Styling */
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #f4f5fa;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure that content pushes footer down */
+        }
 
-header.main-header {
-    background: linear-gradient(90deg, #1d4ed8, #2563eb);
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+        header.main-header {
+            background: linear-gradient(90deg, #1d4ed8, #2563eb);
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
 
-header .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
+        header .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
 
-.nav-bar ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
+        .nav-bar ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
 
-.nav-bar ul li {
-    margin: 0 15px;
-}
+        .nav-bar ul li {
+            margin: 0 15px;
+        }
 
-.nav-bar ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-    transition: all 0.3s ease;
-}
+        .nav-bar ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
 
-.nav-bar ul li a:hover {
-    color: #a7c7e7;
-}
+        .nav-bar ul li a:hover {
+            color: #a7c7e7;
+        }
 
-/* Biography Section */
-.bio-section {
-    width: 30%;
-    background: #ffffff;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    margin: 20px;
-    text-align: center;
-    float: left;
-}
+        /* Biography Section */
+        .bio-section {
+            width: 30%;
+            background: #ffffff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin: 20px;
+            text-align: center;
+            float: left;
+        }
 
-.bio-section img {
-    width: 150px;
-    height: 170px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
+        .bio-section img {
+            width: 150px;
+            height: 170px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
 
-.bio-section h2 {
-    font-size: 1.8rem;
-    color: #1d4ed8;
-}
+        .bio-section h2 {
+            font-size: 1.8rem;
+            color: #1d4ed8;
+        }
 
-.social-icons a {
-    margin: 0 10px;
-    font-size: 1.5rem;
-    color: #1d4ed8;
-    text-decoration: none;
-    transition: color 0.3s;
-}
+        .social-icons a {
+            margin: 0 10px;
+            font-size: 1.5rem;
+            color: #1d4ed8;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
 
-.social-icons a:hover {
-    color: #2563eb;
-}
+        .social-icons a:hover {
+            color: #2563eb;
+        }
 
-/* Content Sections */
-.content-section {
-    background: #ffffff;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+        /* Content Sections */
+        .content-section {
+            background: #ffffff;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
 
-/* Recent and Top Posts */
-.posts-section {
-    display: flex;
-    justify-content: space-around;
-    margin: 20px;
-}
+        /* Recent and Top Posts */
+        .posts-section {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px;
+        }
 
-.posts-container {
-    width: 45%;
-    background: #ffffff;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
+        .posts-container {
+            width: 45%;
+            background: #ffffff;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
 
-.posts-container h2 {
-    color: #1d4ed8;
-    margin-bottom: 10px;
-}
+        .posts-container h2 {
+            color: #1d4ed8;
+            margin-bottom: 10px;
+        }
 
-.post-item {
-    display: flex;
-    align-items: center;
-    margin: 10px 0;
-}
+        .post-item {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
 
-.post-item img {
-    width: 100px;
-    height: 100px;
-    margin-right: 10px;
-}
+        .post-item img {
+            width: 100px;
+            height: 100px;
+            margin-right: 10px;
+        }
 
-.post-item a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-}
+        .post-item a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
 
-.post-item a:hover {
-    color: #1d4ed8;
-}
+        .post-item a:hover {
+            color: #1d4ed8;
+        }
 
-/* Footer Section */
-.footer {
-    background: linear-gradient(90deg, #1d4ed8, #2563eb);
-    color: #ffffff;
-    text-align: center;
-    padding: 15px 10px;
-    font-size: 0.9rem;
-    margin-top: auto; /* Ensures footer stays at the bottom */
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
-}
+        /* Footer Section */
+        .footer {
+            background: linear-gradient(90deg, #1d4ed8, #2563eb);
+            color: #ffffff;
+            text-align: center;
+            padding: 15px 10px;
+            font-size: 0.9rem;
+            margin-top: auto; /* Ensures footer stays at the bottom */
+ box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
 
-.footer p {
-    margin: 5px 0;
-    line-height: 1.6;
-}
-.carousel-container {
-      display: flex;
-      overflow: hidden;
-      width: 100%;
-    }
+        .footer p {
+            margin: 5px 0;
+            line-height: 1.6;
+        }
 
-    .carousel-item {
-      min-width: 100%;
-      transition: transform 0.2s ease-in-out;
-      text-align: center;
-    }
+        .carousel-container {
+            display: flex;
+            overflow: hidden;
+            width: 100%;
+        }
 
-    .carousel-item img {
-      max-width: 100%;
-      border-radius: 10px;
-    }
+        .carousel-item {
+            min-width: 100%;
+            transition: transform 0.2s ease-in-out;
+            text-align: center;
+        }
 
-    #contact {
-      padding: 20px;
-      background: #f4f5fa;
-      border-radius: 10px;
-    }
+        .carousel-item img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
 
-    form input, form textarea {
-      width: 100%;
-      margin: 10px 0;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
+        #contact {
+            padding: 20px;
+            background: #f4f5fa;
+            border-radius: 10px;
+        }
 
-    form button {
-      background: #2563eb;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
+        form input, form textarea {
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
 
-    form button:hover {
-      background: #1d4ed8;
-    }
-/* Mobile and Tablet Responsiveness */
-@media (max-width: 768px) {
-    body {
-        font-size: 14px; /* Adjust font size */
-    }
+        form button {
+            background: #2563eb;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
 
-    /* Ensure the layout adapts to smaller screens */
-    main {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding: 10px;
-    }
+        form button:hover {
+            background: #1d4ed8;
+        }
 
-    /* Biography Section */
-    .bio-section {
-        width: 100%; /* Full width on smaller screens */
-        margin: 10px 0;
-    }
+        /* Mobile and Tablet Responsiveness */
+        @media (max-width: 768px) {
+            body {
+                font-size: 14px; /* Adjust font size */
+            }
 
-    .bio-section img {
-        width: 110px;
-        height: 120px;
-    }
+            /* Ensure the layout adapts to smaller screens */
+            main {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding: 10px;
+            }
 
-    /* Content Sections */
-    .content-section {
-        width: 100%; /* Full width on smaller screens */
-        margin: 10px 0;
-    }
+            /* Biography Section */
+            .bio-section {
+                width: 100%; /* Full width on smaller screens */
+                margin: 10px 0;
+            }
 
-    /* Posts Section */
-    .posts-section {
-        flex-direction: column;
-        align-items: center;
-    }
+            .bio-section img {
+                width: 110px;
+                height: 120px;
+            }
 
-    .posts-container {
-        width: 100%; /* Full width for smaller screens */
-        margin: 10px 0;
-    }
-}
+            /* Content Sections */
+            .content-section {
+                width: 100%; /* Full width on smaller screens */
+                margin: 10px 0;
+            }
 
-/* Very Small Mobile Devices */
-@media (max-width: 480px) {
-    header .logo {
-        font-size: 1.2rem;
-    }
+            /* Posts Section */
+            .posts-section {
+                flex-direction: column;
+                align-items: center;
+            }
 
-    .footer {
-        font-size: 0.8rem;
-        padding: 10px;
-    }
+            .posts-container {
+                width: 100%; /* Full width for smaller screens */
+                margin: 10px 0;
+            }
+        }
 
-    .nav-bar ul li {
-        margin: 0 8px;
-    }
-}
- </head> 
- <body> 
-  <header class="main-header"> 
-   <div class="logo">
-     Ahamed Alex 
-   </div> 
-   <nav class="nav-bar"> 
-    <ul> 
-     <li><a href="#poem">Poem</a></li> 
-     <li><a href="#story">Story</a></li> 
-     <li><a href="#book">Book</a></li> 
-     <li><a href="#contact">Contact</a></li> 
-     <li><a href="#service">Service</a></li> 
-    </ul> 
-   </nav> 
-  </header> 
-  <main> <!-- Biography Section --> 
-   <aside class="bio-section"> 
-    <img src="https://ahamedalex50.wordpress.com/wp-content/uploads/2024/12/image1.jpg?w=771" alt="Ahamed Alex"> 
-    <h2>Ahamed Alex</h2> 
-    <p> A multi-talented individual excelling in web development, programming, graphic design, and more. Passionate about creativity and innovation. </p> <!-- Social Media Icons --> 
-    <div class="social-icons"> <a href="https://facebook.com/mdyeasinarafat.artist" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a> <a href="https://x.com/ahamedalex50" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a> <a href="https://instagram.com/mdyeasinarafat50" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a> 
-    </div> 
-   </aside> <!-- Content Sections --> 
-   <section id="poem" class="content-section"> 
-    <h1>Poem</h1> 
-    <p>Your poems go here...</p> 
-   </section> 
-   <section id="story" class="content-section"> 
-    <h1>Story</h1> 
-    <p>Your stories go here...</p> 
-   </section> 
-   <section id="book" class="content-section"> 
-    <h1>Book</h1> 
-    <p>Your books go here...</p> 
-   </section> 
-   <section id="contact" class="content-section"> 
-    <h1>Contact</h1> 
-    <p>Your contact details go here...</p> 
-   </section> 
-   <section id="service" class="content-section"> 
-    <h1>Service</h1> 
-    <p>Your services go here...</p> 
-   </section> <!-- Recent and Top Posts --> 
-   <section class="posts-section"> 
-    <div class="posts-container"> 
-     <h2>Recent Posts</h2> 
-     <div class="post-item"> 
-      <img src="https://ahamedalex50.wordpress.com/wp-content/uploads/2024/12/shadow-girl-tiktok-profile-picture-.webp?w=327" alt="Post 1"> <a href="#poem" target="_blank">Post Title 1</a> 
-     </div> 
-     <div class="post-item"> 
-      <img src="https://ahamedalex50.wordpress.com/wp-content/uploads/2024/12/image3.jpg?w=574" alt="Post 2"> <a href="#story" target="_blank">Post Title 2</a> 
-     </div> 
-    </div> 
-    <div class="posts-container"> 
-     <h2>Top Posts</h2> 
-     <div class="post-item"> 
-      <img src="https://ahamedalex50.wordpress.com/wp-content/uploads/2024/12/image4.jpg?w=735" alt="Post 3"> <a href="#book" target="_blank">Post Title 3</a> 
-     </div> 
-     <div class="post-item"> 
-      <img src="https://ahamedalex50.wordpress.com/wp-content/uploads/2024/12/image2.jpg?w=542" alt="Post 4"> <a href="#service" target="_blank">Post Title 4</a> 
-     </div> 
-    </div> 
-   </section> 
-   <section id="contact" class="content-section"> 
-    <section id="carousel" class="content-section"> 
-     <h2>Featured Posts</h2> 
-     <div class="carousel-container"> 
-      <div class="carousel-item"> 
-       <img src="https://ahamedalex50.wordpress.com/wp-content/uploads/2024/12/image3.jpg?w=574" alt="Post 1"> 
-       <p>Post 1 Description</p> 
-      </div> 
-      <div class="carousel-item"> 
-       <img src="https://ahamedalex50.wordpress.com/wp-content/uploads/2024/12/image4.jpg?w=735" alt="Post 2"> 
-       <p>Post 2 Description</p> 
-      </div> 
-     </div> 
-    </section> 
-    <h2>Contact Me</h2> 
-    <form action="#" method="POST"> 
-     <input type="text" name="name" placeholder="Your Name" required> 
-     <input type="email" name="email" placeholder="Your Email" required> <textarea name="message" placeholder="Your Message" required></textarea> <button type="submit">Send Message</button> 
-    </form> 
-   </section> 
-  </main> <!-- Footer Section --> 
-  <footer class="footer"> 
-   <p>© 2024 Ahamed Alex. All Rights Reserved.</p> 
-  </footer> 
-  <script>
-    const carouselContainer = document.querySelector('.carousel-container');
-    let currentIndex = 0;
+        /* Very Small Mobile Devices */
+        @media (max-width: 480px) {
+            header .logo {
+                font-size: 1.2rem;
+            }
 
-    function showNextSlide() {
-      currentIndex = (currentIndex + 1) % carouselContainer.children.length;
-      carouselContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
-    }
+            .footer {
+                font-size: 0.8rem;
+                padding: 10px;
+            }
 
-    setInterval(showNextSlide, 3000);
-  </script> 
- </body>
-</html>
+            .nav-bar ul li {
+                margin: 0 8px;
+            }
+    </style> 
+</head> 
+<body> 
+    <header class="main-header"> 
+        <div class="logo">Ahamed Alex</div> 
+        <nav class="nav-bar"> 
+            <ul> 
+                <li><a href="#poem">Poem</a></li> 
+                <li><a href="#story">Story</a></li> 
+                <li><a href="#book">Book</a></li> 
+                <li><a href="#contact-info">Contact</a></li> 
+                <li><a href="#service">Service</a></li> 
+            </ul> 
+        </nav> 
+    </header> 
+    <main> 
+        <!-- Biography Section --> 
+        <aside class="bio-section"> 
+            <img src="https://ahamedalex50.wordpress.com/wp-content/uploads/2024/12/image1.jpg?w=771" alt="Ahamed Alex"> 
+            <h2>Ahamed Alex</h2> 
+            <p>A multi-talented individual excelling in web development, programming, graphic design, and more. Passionate about creativity and innovation.</p> 
+            <!-- Social Media Icons --> 
+            <div class="social-icons"> 
+                <a href="https://facebook.com/mdyeasinarafat.artist" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a> 
+                <a href="https://x.com/ahamedalex50" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a> 
+                <a href="https://instagram.com/mdyeasinarafat50" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a> 
+            </div> 
+        </aside> 
+        <!-- Content Sections --> 
+        <section id="poem" class="content-section"> 
+            <h1>Poem </h1> 
+            <p>Your poems go here...</p> 
+        </section> 
+        <section id="story" class="content-section"> 
+            <h1>Story</h1> 
+            <p>Your stories go here...</p> 
+        </section> 
+        <section id="book" class="content-section"> 
+            <h1>Book</h1> 
+            <p>Your books go here...</p> 
+        </section> 
+        <section id="contact-info" class="content-section"> 
+            <h1>Contact Me</h1> 
+            <form action="#" method="POST"> 
+                <input type="text" name="name" placeholder="Your Name" required> 
+                <input type="email" name="email" placeholder="Your Email" required> 
+                <textarea name="message" placeholder="Your Message" required></textarea> 
+                <button type="submit">Send Message</button> 
+            </form> 
+        </section> 
+        <section id="service" class="content-section"> 
+            <h1>Service</h1> 
+            <p>Your services go here...</p> 
+        </section> 
+        <!-- Recent and Top Posts --> 
+        <section class="posts-section"> 
+            <div class="posts-container"> 
+                <h2>Recent Posts</h2> 
+                <div class="post-item"> 
+                    <img src="https://ahamedalex50.wordpress.com/wp-content/uploads/2024/12/shadow-girl-tiktok-profile-picture-.webp?w=327" alt="Post 1"> 
+                    <a href="#poem" target="_blank">Post Title 1</a> 
+                </div> 
+                <div class="post-item"> 
+                    <img src="https://ahamedalex50.wordpress.com/wp-content/uploads/2024/12/image3.jpg?w=574" alt="Post 2"> 
+                    <a href="#story" target="_blank">Post Title 2</a> 
+                </div> 
+            </div> 
+            <div class="posts-container"> 
+                <h2>Top Posts</h2> 
+                <div class="post-item"> 
+                    <img src="https://ahamedalex50.wordpress.com/wp-content/uploads/2024/12/image4.jpg?w=735" alt="Post 3"> 
+                    <a href="#book" target="_blank">Post Title 3</a> 
+                </div> 
+                <div class="post-item"> 
+                    <img src="https://ahamedalex50.wordpress.com/wp-content/uploads/2024/12/image2.jpg?w=542" alt="Post 4"> 
+                    <a href="#service" target="_blank">Post Title 4</a> 
+                </div> 
+            </div> 
+        </section> 
+        <section id="carousel" class="content-section"> 
+            <h2>Featured Posts</h2> 
+            <div class="carousel-container"> 
+                <div class="carousel-item"> 
+                    <img src="https://ahamedalex50.wordpress.com/wp-content/uploads/2024/12/image3.jpg?w=574" alt="Post 1"> 
+                    <p>Post 1 Description</p> 
+                </div> 
+                <div class="carousel-item"> 
+                    <img src="https://ahamedalex50.wordpress.com/wp-content/uploads/2024/12/image4.jpg?w=735" alt="Post 2"> 
+                    <p>Post 2 Description</p> 
+                </div> 
+            </div> 
+        </section> 
+    </main> 
+    <!-- Footer Section --> 
+    <footer class="footer"> 
+        <p>© 2024 Ahamed Alex. All Rights Reserved.</p> 
+    </footer> 
+    <script>
+        const carouselContainer = document.querySelector('.carousel-container');
+        let currentIndex = 0;
+
+        function showNextSlide() {
+            currentIndex = (currentIndex + 1) % carouselContainer.children.length;
+            carouselContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        setInterval(showNextSlide, 3000);
+    </script> 
+</body>
+</html> ⬤
